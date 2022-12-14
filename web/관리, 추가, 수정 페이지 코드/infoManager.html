@@ -1,0 +1,34 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        text-align: center;
+    }
+</style>
+<script>
+    function movePage(stu_no){
+        // 학생 데이터가 들어있는 열을 클릭하면 해당 열에 학생의 학번을 전달하려 하였으나 시간 부족으로 구현하지 못하고 행을 클릭하면 학생 출석 관리 페이지로 이동
+        location.href="{% url 'stuAttendInfo' %}"
+    }
+</script>
+<body>
+    <div style="float:right;"><a href="{% url 'addStudent' %}"><button>추가</button></a></div><br>
+    <table border="1">
+        <tr>
+            <!-- for문을 통하여 DB에 저장된 데이터들을 가져와서 열마다 데이터를 삽입하여 웹 페이지에 출력되도록 하는 코드 -->
+            {% for stu_info in studentInfo %}
+            <td id={{stu_info.stu_no}} style="text-align: center;" onclick="movePage(this.id)">{{stu_info.stu_image}}<br>{{stu_info.dept}} {{stu_info.stu_no}}<br>{{stu_info.stu_name}}</td>
+            {% endfor %}
+        </tr>   
+    </table>
+    <br>
+    <!-- <a href="{% url ''%}">이전</a>  메인 페이지 url을 넣으면 ok -->
+</body>
+</html>
