@@ -1,0 +1,90 @@
+
+<!-- saved from url=(0219)file:///C:/Users/user/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EA%B0%95%EC%9D%98%20%EC%9E%90%EB%A3%8C/3%ED%95%99%EB%85%84%202%ED%95%99%EA%B8%B0/%EB%AC%B4%EC%84%A0%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Main_2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Insert title here</title>
+<style>
+td {
+        text-align: center;
+      }
+
+</style></head>
+
+<body>
+
+    <img style="display: block; margin: 0 auto; height: 70px;" src="./Main_2_files/logo_b.png" alt="대체 이미지" onclick="location.href=&#39;Main.html&#39;">
+
+<br> 
+
+    <input style="float:right; margin-right: 50px;" type="button" value="삭제">
+    <input style="float:right; margin-right: 10px;" type="button" value="추가">
+    <input style="float:right; margin-right: 10px; margin-bottom: 10px;" type="button" value="이전" onclick="location.href=&#39;Main.html&#39;"> <br>
+
+<br>
+
+    <table style="margin-left: 50px">
+        <tbody><tr>
+            <td style="background-color: blue;" onclick="changeColor(this)">
+                <div> <img src="./Main_2_files/1.gif" alt="대체 이미지"> <br>
+                202200001 <br>
+                A </div>
+            </td>
+            <td style="background-color: blue;" onclick="changeColor(this)">
+                <div> <img src="./Main_2_files/1.gif" alt="대체 이미지"> <br>
+                    202200002 <br>
+                    B </div>
+            </td>
+            <td style="background-color: blue;" onclick="changeColor(this)">
+                <div> <img src="./Main_2_files/1.gif" alt="대체 이미지"> <br>
+                    202200003 <br>
+                    C </div>
+            </td>
+        </tr>
+    </tbody></table>
+
+<br>
+
+<input style="float:left; margin-right: 10px;" type="button" value="완료">
+
+<br><br>
+
+<hr>
+
+<center>
+    <p> COPYRIGHT © 2016 INHA TECHNICAL COLLEGE. ALL RIGHTS RESERVED. </p>
+    <p id="clock" style="color:black;">12월 4일 일요일 15:57:59</p>
+</center>
+        
+<script>
+    var Target = document.getElementById("clock");
+    function clock() {
+        var time = new Date();
+        var month = time.getMonth();
+        var date = time.getDate();
+        var day = time.getDay();
+        var week = ['일', '월', '화', '수', '목', '금', '토'];
+        var hours = time.getHours();
+        var minutes = time.getMinutes();
+        var seconds = time.getSeconds();
+        
+        Target.innerText = 
+        `${month + 1}월 ${date}일 ${week[day]}요일 ` +
+        `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+                    
+    }
+    clock();
+
+    function changeColor(obj) {
+        if(obj.style.backgroundColor == "blue") {
+            obj.style.backgroundColor = "yellow";
+        } else if(obj.style.backgroundColor == "yellow") {
+            obj.style.backgroundColor = "red";
+        } else if(obj.style.backgroundColor == "red"){
+            obj.style.backgroundColor = "blue";
+        }
+    }
+
+</script>
+
+
+</body></html>
