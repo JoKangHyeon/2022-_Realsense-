@@ -20,7 +20,7 @@ Dlib에서 얻어올 수 있는 랜드마크 중에서, 4개의 랜드마크(눈
 1. 코는 눈보다는 앞에 있어야 합니다.
 2. 코는 눈보다 최소 2센치는 높아야 합니다.
 3. 코는 잎보다는 앞에 있어야 합니다.
-4. 얼굴은 최대 30cm의 굴곡을 가집니다.
+4. 얼굴은 최대 10cm의 굴곡을 가집니다.
 5. 얼굴은 최소 2cm의 굴곡을 가집니다.
 
 <img src=https://github.com/JoKangHyeon/2022-_Realsense-/blob/main/docs/image/img1.png width=400px height=400px>
