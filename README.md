@@ -24,6 +24,7 @@ Dlib에서 얻어올 수 있는 랜드마크 중에서, 4개의 랜드마크(눈
 5. 얼굴은 최소 2cm의 굴곡을 가집니다.
 
 <img src=https://github.com/JoKangHyeon/2022-_Realsense-/blob/main/docs/image/img1.png>
+
 ## 정맥 인식
 IR빛의 정맥에서의 굴절률 차이를 이용한 정맥 인식 기능 데모를 구현하였습니다.
 화면에 왼쪽 위부터 정맥 패턴/깊이/IR/컬러 이미지가 차례로 표시됩니다.
