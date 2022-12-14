@@ -28,8 +28,7 @@ class VeinRecognition:
                 color_image = np.asanyarray(color_frame.get_data())
                 ir_image = np.asanyarray(ir_frame.get_data())
                 
-                
-
+                depth_colormap = cv2.applyColorMap(cv2.convertScaleAbs(depth_image, alpha=0.03), cv2.COLORMAP_JET)
                 data_image = depth_colormap-ir_image
                 
                 grey_color = 153
@@ -39,7 +38,6 @@ class VeinRecognition:
                 bg_removed = np.where((depth_image_3d > self.clipping_distance) | (depth_image_3d <= 0), grey_color, data_image)
 
                 # 화면 출력
-                depth_colormap = cv2.applyColorMap(cv2.convertScaleAbs(depth_image, alpha=0.03), cv2.COLORMAP_JET)
                 images = np.vstack((np.hstack((bg_removed, depth_colormap)),np.hstack((ir_image,color_image))))
                 
                 cv2.namedWindow('RealSense', cv2.WINDOW_AUTOSIZE)
