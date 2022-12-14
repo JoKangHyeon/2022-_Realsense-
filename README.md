@@ -1,6 +1,6 @@
 # 2022-Realsense-얼굴인식 출석 프로그램
 <img src=https://github.com/IntelRealSense/librealsense/raw/master/doc/img/realsense.png><br>
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)<br>
 인텔 Realsense를 사용한 얼굴인식 출석 프로그램입니다.
 
 # 인증
